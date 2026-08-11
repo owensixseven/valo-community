@@ -1,0 +1,100 @@
+ /* =========================
+    APPLICATIONS PAGE
+ ========================= */
+
+.applications-hero {
+    min-height: 55vh;
+    padding: 180px 30px 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #0d0e13;
+}
+
+.applications-content {
+    max-width: 800px;
+}
+
+.applications-content h1 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1;
+    font-weight: 900;
+}
+
+.applications-content p:not(.hero-tag) {
+    color: #999;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.applications-section {
+    max-width: 1300px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.application-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.application-card {
+    min-height: 390px;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: #101116;
+    border: 1px solid #1d1e25;
+
+    transition: 0.25s;
+}
+
+.application-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff4655;
+}
+
+.application-number {
+    color: #ff4655;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.application-card h2 {
+    margin-top: 30px;
+
+    font-size: 25px;
+    line-height: 1.1;
+}
+
+.application-card p {
+    margin-top: 20px;
+
+    color: #888;
+    font-size: 15px;
+}
+
+.application-card .primary-btn {
+    margin-top: auto;
+}
+
+@media (max-width: 850px) {
+
+    .application-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-card {
+        min-height: 330px;
+    }
+
+}
