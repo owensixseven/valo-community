@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Team Registration | VALO Community</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .form-page {
+            max-width: 850px;
+            margin: auto;
+            padding: 160px 30px 100px;
+        }
+
+        .form-header {
+            margin-bottom: 45px;
+        }
+
+        .form-header h1 {
+            font-size: clamp(45px, 7vw, 80px);
+            line-height: 1;
+        }
+
+        .form-header p:not(.hero-tag) {
+            color: #888;
+            margin-top: 20px;
+        }
+
+        .team-form {
+            background: #101116;
+            border: 1px solid #1d1e25;
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 9px;
+
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+
+            padding: 15px;
+
+            background: #08090c;
+            border: 1px solid #292b33;
+            color: #fff;
+
+            outline: none;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #ff4655;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .form-status {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .success {
+            color: #65d88a;
+        }
+
+        .error {
+            color: #ff4655;
+        }
+
+        @media (max-width: 600px) {
+            .team-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                VALO<span>COMMUNITY</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="applications.html" class="active">Applications</a>
+            </nav>
+
+            <a href="YOUR_DISCORD_LINK" class="discord-btn">
+                Join Discord
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="form-page">
+
+            <div class="form-header">
+
+                <p class="hero-tag">
+                    VALO COMMUNITY
+                </p>
+
+                <h1>
+                    TEAM REGISTRATION
+                </h1>
+
+                <p>
+                    Register your team for VALO Community events
+                    and competitive activities.
+                </p>
+
+            </div>
+
+
+            <form id="teamForm" class="team-form">
+
+                <div class="form-group">
+                    <label for="teamName">Team Name</label>
+
+                    <input
+                        type="text"
+                        id="teamName"
+                        name="teamName"
+                        placeholder="Enter team name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="captainName">Captain Name</label>
+
+                    <input
+                        type="text"
+                        id="captainName"
+                        name="captainName"
+                        placeholder="Enter captain name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="discord">Discord Username</label>
+
+                    <input
+                        type="text"
+                        id="discord"
+                        name="discord"
+                        placeholder="example"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Contact Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="team@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="players">Player Roster</label>
+
+                    <textarea
+                        id="players"
+                        name="players"
+                        placeholder="Player 1&#10;Player 2&#10;Player 3&#10;Player 4&#10;Player 5"
+                        required
+                    ></textarea>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="experience">Previous Experience</label>
+
+                    <textarea
+                        id="experience"
+                        name="experience"
+                        placeholder="Tell us about your team's experience."
+                    ></textarea>
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn submit-btn"
+                >
+                    SUBMIT TEAM REGISTRATION
+                </button>
+
+                <div id="formStatus" class="form-status"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                <a href="index.html" class="logo">
+                    VALO<span>COMMUNITY</span>
+                </a>
+
+                <p>
+                    A community for competitive players,
+                    teams and creators.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 VALO Community. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="js/team-registration.js"></script>
+
+</body>
+
+</html>
