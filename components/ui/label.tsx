@@ -1,0 +1,16 @@
+import { forwardRef } from 'react'
+
+export interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
+
+const Label = forwardRef<HTMLLabelElement, LabelProps>(
+  ({ className = '', ...props }, ref) => (
+    <label
+      ref={ref}
+      className={`block text-sm font-bold uppercase tracking-wider text-white ${className}`}
+      {...props}
+    />
+  ),
+)
+Label.displayName = 'Label'
+
+export { Label }
